@@ -1,4 +1,4 @@
-import ExpenseItem from "./components/Expense_Item";
+import ExpenseItem from "./Feature/Expense_Item";
 
 const expenses = [
   {
@@ -22,7 +22,7 @@ const expenses = [
   },
 ];
 
-function App() {
+const App= () => {
   return (
     <div>
       <h2>Let's get started</h2>
