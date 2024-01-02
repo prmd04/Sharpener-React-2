@@ -1,5 +1,6 @@
 import Expenses from "./Feature/Expense";
 import React from "react";
+import NewExpense from "./AddExpense/newExpense";
 
 const expenses = [
   {
@@ -26,7 +27,7 @@ const expenses = [
 function App() {
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <NewExpense/>
       <Expenses items={expenses}/>
     </div>
   );
