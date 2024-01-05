@@ -1,5 +1,5 @@
 import Expenses from "./Feature/Expense";
-import React from "react";
+import React,{useState} from "react";
 import NewExpense from "./AddExpense/newExpense";
 
 const expenses = [
@@ -24,10 +24,18 @@ const expenses = [
   },
 ];
 
+
 function App() {
+  const [addNewEntry,setAddNewEntry] = useState(expenses);
+  const addNewExpenseHandler = (expense) =>{
+    console.log("in appjs");
+    expenses.push(expense);
+    setAddNewEntry(expenses);
+  }
+
   return (
     <div>
-      <NewExpense/>
+      <NewExpense onAddExpense={addNewExpenseHandler}/>
       <Expenses items={expenses}/>
     </div>
   );
