@@ -5,6 +5,7 @@ import Card from "../UI/Card_Element";
 import "./Expense.css";
 
 const Expenses = (props) => {
+  console.log(props);
   return (
     <div>
       {props.items.map((item, index) => (

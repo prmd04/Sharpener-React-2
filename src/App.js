@@ -30,10 +30,12 @@ function App() {
   const [expenses, setExpenses] = useState(initialExpenses);
 
   const addNewExpenseHandler = (newExpense) => {
-  setExpenses((prevExpenses) => {
-    return [...prevExpenses, newExpense];
+  setExpenses((prevExpenses) => {  //its take previous array automatically
+    return [newExpense , ...prevExpenses];// then we here update the state
   });
 };
+
+console.log(expenses);
 
 
   return (
