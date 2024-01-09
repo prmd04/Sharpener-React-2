@@ -1,5 +1,6 @@
 import './Card.css';
 import React from 'react';
+import Filter from '../Feature/Filter';
 
 
 const Card = (props) => {
