@@ -27,9 +27,9 @@ const Expenses = (props) => {
         {filteredExpenses.length > 0 &&
           filteredExpenses.map((item, index) =>
             filteredExpenses.length === 1 ? (
-              <div>
+              <div key={index}>
                 <ExpenseItem
-                  key={index}
+                  
                   title={item.title}
                   amount={item.amount}
                   date={item.date}
