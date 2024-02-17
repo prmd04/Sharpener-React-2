@@ -1,11 +1,7 @@
 import Expenses from "./Feature/Expense";
 import React,{useState} from "react";
 import NewExpense from "./AddExpense/newExpense";
-
 import { initialExpenses } from "./constant";
-
-
-
 
 function App() {
   const [expenses, setExpenses] = useState(initialExpenses);
